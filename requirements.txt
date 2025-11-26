@@ -1,0 +1,13 @@
+ipykernel
+pandas
+numpy
+missingno
+matplotlib
+plotly
+seaborn
+scikit-learn
+pymongo
+requests
+beautifulsoup4
+statsmodels
+yfinance
