@@ -11,3 +11,5 @@ requests
 beautifulsoup4
 statsmodels
 yfinance
+PyPortfolioOpt
+pmdarima
