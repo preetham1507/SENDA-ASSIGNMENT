@@ -14,3 +14,4 @@ yfinance
 PyPortfolioOpt
 pmdarima
 openpyxl
+tensorflow
