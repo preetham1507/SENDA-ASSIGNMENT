@@ -1,5 +1,5 @@
 # Portfolio Optimization & Risk Analytics with LSTM Forecasting  
-**Quantitative Developer Assignment – Full End-to-End Solution**
+**Quantitative Developer – Full End-to-End Solution**
 
 ## Project Overview & Approach
 
