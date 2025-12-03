@@ -58,7 +58,7 @@ Forecasts are generated recursively for the **next 90 trading days** and visuali
 | Risk Analytics         | Done   | 30+ metrics + comprehensive visualizations                |
 | Mean-Variance Optimizer| Done   | Scipy-based, long-only, maximum Sharpe                     |
 | Time Series Forecasting| Done   | LSTM + MC Dropout → 90-day forecast with 95% CI            |
-| Database Storage       | Done   | SQLite (relational) – all tables queryable                |
+| Database Storage       | Done   | Relational – all tables queryable                |
 | Organized Graphs       | Done   | Saved in `./graphs/` (PNG + PDF)                           |
 | Report & Interpretation| Done   | This document + detailed markdown commentary               |
 
