@@ -11,7 +11,7 @@ This notebook presents a complete, production-ready quantitative finance pipelin
 - Implemented **classical mean-variance optimization** (maximum Sharpe ratio, long-only, risk-free rate = 0)
 - Built an **LSTM neural network** with **Monte Carlo Dropout** to generate **90-day ahead portfolio value forecasts** with proper **95% confidence intervals**
 - Persisted all results (metrics, weights, correlation matrix, forecasts) in a **relational SQLite database** (`portfolio_analysis.db`) — fully compliant with the specification
-- Saved **all visualizations** systematically in `./graphs/` (PNG + PDF) with clear naming and folder structure
+- Saved **all visualizations** systematically in `./graphs/` (PDF) with clear naming and folder structure
 - Provided thorough interpretation of results, risk insights, and forward-looking projections
 
 ### Time Series Forecasting Strategy (Why LSTM instead of ARIMA?)
@@ -30,7 +30,7 @@ Given the presence of non-linear patterns, regime shifts, and long-memory effect
 - Empirical validation showed superior calibration of uncertainty bands compared to classical methods
 - 300 stochastic forward passes per time step yield robust mean forecast + confidence intervals
 
-Forecasts are generated recursively for the **next 90 trading days** and visualized alongside historical portfolio value.
+Forecasts are generated recursively for the **next 10 trading days** and visualized alongside historical portfolio value.
 
 ### Full Checklist of Implemented Risk Metrics
 
@@ -45,21 +45,5 @@ Forecasts are generated recursively for the **next 90 trading days** and visuali
 | Distribution              | Skewness • Kurtosis (returns & alpha residuals)                                                |
 | Diversification           | Full pairwise correlation matrix + annotated heatmap                                           |
 
-**Bonus Features Included**  
-- Conditional Value at Risk (CVaR / Expected Shortfall)  
-- Backtest: Optimized portfolio vs Equal-weighted benchmark  
-- Discussion of how risk metrics influenced final asset allocation
 
-### Deliverables Summary
 
-| Component                | Status | Implementation Notes                                      |
-|------------------------|--------|------------------------------------------------------------|
-| Data Loader            | Done   | Robust yfinance pipeline with error handling               |
-| Risk Analytics         | Done   | 30+ metrics + comprehensive visualizations                |
-| Mean-Variance Optimizer| Done   | Scipy-based, long-only, maximum Sharpe                     |
-| Time Series Forecasting| Done   | LSTM + MC Dropout → 90-day forecast with 95% CI            |
-| Database Storage       | Done   | Relational – all tables queryable                |
-| Organized Graphs       | Done   | Saved in `./graphs/` (PNG + PDF)                           |
-| Report & Interpretation| Done   | This document + detailed markdown commentary               |
-
-Let’s now walk through the implementation, results, and insights.
